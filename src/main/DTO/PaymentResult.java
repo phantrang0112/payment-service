@@ -1,8 +1,8 @@
 package main.DTO;
 
-public class PaymentResult {
+public class PaymentResult<T> {
     private String message;
-    private Long balance;
+    private T result;
 
     public String getMessage() {
         return message;
@@ -12,11 +12,11 @@ public class PaymentResult {
         this.message = message;
     }
 
-    public Long getBalance() {
-        return balance;
+    public T getResult() {
+        return result;
     }
 
-    public void setBalance(Long balance) {
-        this.balance = balance;
+    public void setResult(T result) {
+        this.result = result;
     }
 }
